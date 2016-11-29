@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="AjaxDataXchange.js"></script>
+        <script>
+
+            function hotovo(msg)
+            {
+                alert("Zprava ze serveru: " + msg );
+            }
+
+
+            function Start()
+            {
+                XSendAndReceive("https://my.cuesystem.com/command/Default.aspx", "{moje zaslana data}", hotovo)  
+            }
+
+        </script>
+
+    </head>
+
+
+    <body onLoad="Start()">
+
+    </body>
+</html>
